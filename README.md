@@ -58,6 +58,32 @@ This project solves that problem by converting chat data into structured insight
 
 ## ▶️ How to Run the Project
 
-### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/whatsapp-chat-analyzer.git
+git clone https://github.com/your-username/whatsapp-chat-analyzer.git   # Clone the repository
+
+cd whatsapp-chat-analyzer                                               # Navigate to the project directory
+
+python -m venv venv                                                     # Create a virtual environment
+
+# Activate the virtual environment
+# Windows
+venv\Scripts\activate
+# Mac/Linux
+source venv/bin/activate
+
+pip install -r requirements.txt                                         # Install all required dependencies (Pandas, NumPy, NLTK, Matplotlib, Streamlit)
+
+streamlit run app.py                                                     # Run the Streamlit application
+# The browser will open automatically. If not, copy the URL from the terminal (usually http://localhost:8501)
+
+# Upload your WhatsApp chat .txt file (exported without media)
+# Explore detailed analysis:
+# - Message frequency (daily, monthly, user-wise)
+# - Most used words
+# - Emoji usage
+# - Sentiment distribution (Positive / Negative / Neutral)
+# - User activity patterns
+
+# Notes:
+# - Make sure Python 3.8 or above is installed
+# - Only .txt chat files are supported (do not upload ZIP files)
